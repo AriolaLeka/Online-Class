@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="../../assets/css/login_teacher.css" type="text/css">
+    <link rel="stylesheet" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="containner">
+        <div id="navi">
+            <nav>
+                <a href="../index.html">
+                    <img src="../../assets/images/logoja.png" id="logo">
+                </a>
+                <ul>
+                    <li class="active"><a href="../index.html">Home</a></li>
+                    <li id="users"><a href="users.html">Users</a></li>
+                    <li id="login"><a href="#">Login</a>
+                        <div class="nav-area-1">
+                            <a href="login_teacher.html">Teacher</a><br>
+                            <a href="login_student.html">Student</a>
+                        </div>
+                    </li>
+                    <li id="signup"><a href="register.html">Sign up</a> </li>
+                    <li id="lectures"><a href="lectures.html">Lectures</a></li>
+                    <li id="addLecture"><a href="add_lecture.html">Add lecture</a></li>
+                    <li><a href="about_us.html">About us</a></li>
+                    <li id="logOUT"><a href="#">Log out</a></li>
+                </ul>
+            </nav>
+            </div>
+    
+    <div id="cont">
+        <img src="http://pngimg.com/uploads/teacher/teacher_PNG70.png" id="techerr">
+        <div class="login_teacher_box">
+            <div class="login_Box">
+            <img src="https://www.flaticon.com/svg/static/icons/svg/3135/3135768.svg" class="usr_img">
+            </div>
+            <h4>Welcome professor <br> Please LogIn</h4>
+            <div class="input_Box">
+            <input type="text" name="name" id="namme" required>
+            <label><i class="fa fa-user"></i>Username</label>
+            </div>
+            <div class="input_Box">
+            <input type="password" id="passwordd" name="password" required>
+            <label><i class="fa fa-lock"></i>Password</label>
+            </div>
+            <button id="log_teach" value="Submit">LogIn</button>
+            <p class="text">Do you want to go back?<a href="../index.html" class="btn">Back</a></p>
+        </div>
+    </div>
+</div>
+
+</body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../../scripts/login_teacher.js"></script>
+</html>

@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title>ADD LECTURE</title>
+    <link rel="stylesheet" href="../../assets/css/add_lecture.css">
+</head>
+
+<body>
+
+<div id="container">
+    <div id="navi">
+        <nav>
+            <a href="../index.html">
+                <img src="../../assets/images/logoja.png" id="logo">
+            </a>
+            <ul>
+                <li class="active"><a href="../index.html">Home </a></li>
+                <li id="users"><a href="users.html">Users </a></li>
+                <li id="login"><a href="#">Login</a>
+                    <div class="nav-area-1">
+                        <a href="login_teacher.html">Teacher</a><br>
+                        <a href="login_student.html">Student</a>
+                    </div>
+                </li>
+                <li id="signup"><a href="register.html">Sign up</a> </li>
+                <li id="lectures"><a href="lectures.html">Lectures </a></li>
+                <li id="addLecture"><a href="add_lecture.html">Add lecture </a></li>
+                <li><a href="about_us.html">About us</a></li>
+                <li id="logOUT"><a href="#">Log out </a></li>
+            </ul>
+        </nav>
+        </div>
+
+
+    <div id="div1">
+        <div id="forma">
+            <label>Lecture's title:</label><br>
+            <input type="text" id="title" placeholder="Lecture's title"><br>
+            <label>Lecture's content:</label><br>
+            <textarea type="text" id="content" placeholder="Lecture's content"></textarea><br>
+            <label>Lecture's photo:</label><br>
+            <input type="text" id="foto" placeholder="Lecture's photo address"><br>
+            <label>Select File</label><br>
+            <input type="text" id="file" placeholder="Lecture's file"><br>
+            <button id="add">Add Lecture</button>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../../scripts/addlecture.js"></script>
+<script>
+ $(document).ready(function(){
+        var dB=openDatabase("databaz","1.0","databaz",65535); 
+        dB.transaction(function(transaction){
+            var sql="CREATE TABLE leksionet "+
+            "(Id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,"+
+            "Title VARCHAR(100) NOT NULL,"+
+            "Content LONGTEXT NOT NULL,"+
+            "Photo LONGTEXT NOT NULL,"+
+            "Pdf LONGTEXT NOT NULL)";
+            transaction.executeSql(sql,undefined,function(){
+                console.log("The table was created successfully");
+            });
+        });
+    });
+</script>
+</html>
+

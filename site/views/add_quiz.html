@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title> Add Quiz</title> 
+        <link rel="stylesheet" href="../..//assets/css/add_quiz.css">
+    </head>
+    
+<body>
+    <div id="cont">
+        <div id="navi">
+            <nav>
+                <a href="../index.html">
+                    <img src="../../assets/images/logoja.png" id="logo">
+                </a>
+                <ul>
+                    <li class="active"><a href="../index.html">Home </a></li>
+                    <li id="users"><a href="users.html">Users </a></li>
+                    <li id="login"><a href="#">Login</a>
+                        <div class="nav-area-1">
+                            <a href="login_teacher.html">Teacher</a><br>
+                            <a href="login_student.html">Student</a>
+                        </div>
+                    </li>
+                    <li id="signup"><a href="register.html">Sign up</a> </li>
+                    <li id="lectures"><a href="lectures.html">Lectures </a></li>
+                    <li id="addLecture"><a href="add_lecture.html">Add lecture </a></li>
+                    <li><a href="about_us.html">About us</a></li>
+                    <li id="logOUT"><a href="#">Log out </a></li>
+                </ul>
+            </nav>
+            </div>
+
+        <div id="out">
+            <p id="tekst">You must fill the form to add questions to the quiz!</p>
+            <div id="kontainer">
+                <div id="forme">
+                    <label>Question:</label><br>
+                    <input type="text" id="pyetja" placeholder="Please write the question "><br>
+                    <label>First Alternative:</label><br>
+                    <input type="text" id="alt1" placeholder="First Alternative"><br>
+                    <label>Second Alternative:</label><br>
+                    <input type="text" id="alt2" placeholder="Second Alternative"><br>
+                    <label>Third Alternative:</label><br>
+                    <input type="text" id="alt3" placeholder="Third Alternative"><br>
+                    <label>Fourth Alternative:</label><br>
+                    <input type="text" id="alt4" placeholder="Fourth Alternative"><br>
+                    <label>Correct Answer:</label><br>
+                    <input type="text" id="altcorr" placeholder="Correct Answer"><br>
+                    <button id="shto">Add Question</button>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+</body>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../../scripts/add_quiz.js"></script>
+</html>

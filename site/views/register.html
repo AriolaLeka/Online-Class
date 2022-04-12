@@ -1,0 +1,76 @@
+
+<html>
+<head>
+    <title>Regjistrimi</title>
+    <link rel="stylesheet" href="../../assets/css/register.css">
+    <link rel="stylesheet" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="ccontainer">
+    
+        <div id="navi">
+            <nav>
+                <a href="../index.html">
+                    <img src="../../assets/images/logoja.png" id="logo">
+                </a>
+                <ul>
+                    <li class="active"><a href="../index.html">Home</a></li>
+                    <li id="users"><a href="users.html">Users</a></li>
+                    <li id="login"><a href="#">Login</a>
+                        <div class="nav-area-1">
+                            <a href="login_teacher.html">Teacher</a><br>
+                            <a href="login_student.html">Student</a>
+                        </div>
+                    </li>
+                    <li id="signup"><a href="register.html">Sign up</a></li>
+                    <li id="lectures"><a href="lectures.html">Lectures</a></li>
+                    <li id="addLecture"><a href="add_lecture.html">Add lecture</a></li>
+                    <li><a href="about_us.html">About us</a></li>
+                    <li id="logOUT"><a href="#">Log out</a></li>
+                </ul>
+            </nav>
+            </div>
+<div class="outer">
+        <div class="regjistrimi" >
+            <form>
+                <div class="loginBoxx">
+                    <img src="https://www.flaticon.com/svg/static/icons/svg/201/201565.svg" class="userimg">
+                </div>
+                <h2><b>Register to enter class</b></h2>
+                <div class="inputtBox">
+                    <input type="text" name="name" id="name"  required>
+                    <label><i class="fa fa-user"></i><b>Name</b></label>
+                </div>
+                <div class="inputtBox">
+                    <input type="text" name="surname" id="surname" required>
+                    <label><i class="fa fa-user"></i><b>Surname</b></label>
+                </div>
+                <div class="inputtBox">
+                    <input type="date" name="birthday" id="birthdate"  required>
+                </div>
+                <div class="inputtBox">
+                    <input type="text" name="email" id="email"  required>
+                    <label><i class="fa fa-envelope"></i><b>Email</b></label>
+                </div>
+                <div class="inputtBox">
+                    <input type="password" name="password" id="password" required>
+                    <label><i class="fa fa-lock"></i><b>Password</b></label>
+                </div>
+                <div class="inputtBox">
+                    <input type="text" name="cel" id="cel" required/>
+                    <label><i class="fa fa-phone-square"></i><b>Phone Number</b></label>
+                </div>
+                <div>
+                    <button id="regjister"><b>Sign Up</b></button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+ </div>
+ 
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../../scripts/registerr.js"></script>
+</html>

@@ -1,0 +1,173 @@
+#auto{
+    margin-left: 8%;
+    margin-right: 8%;
+    position: relative;
+    height: 130%;
+}
+
+#navi{
+    position: relative;
+}
+
+nav{
+    height: 100px;
+}
+
+nav ul{
+    float:right;
+    margin-right: 0%;
+    margin-top:90px;
+    display: inline-flex;
+
+}
+
+nav ul li{
+    list-style-type: none;
+    line-height: 45px;
+    margin-left:30px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:#cebb0d;
+    font-size: 18px; 
+}
+
+#logo{
+    height:200px;
+    width: 200px;
+    margin-left: 3%;
+}
+
+.nav-area-1{
+    display: none;
+    z-index: 5;
+}
+
+#users{
+    display:none;
+}
+
+#logOUT{
+    display:none;
+}
+
+#lectures{
+    display:none;
+}
+
+#addLecture{
+    display:none;
+}
+
+#container2{
+    position: relative;
+    margin-top: 5%;
+}
+
+#container2 h2{
+    position: relative;
+    margin-top: 10%;
+    text-align: center;
+    font-size: 50px;
+    color: #B63014;
+    font-family: 'Aladin';
+}
+
+#container2 h4{
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(151, 151, 151);
+    margin-top:-4%;
+}
+
+#container2 table{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+#container2 th,td{
+    border-bottom:1px solid grey;
+    padding: 6px 25px;
+    text-align: right;
+    font-size: 17px;
+}
+
+#container2 table th{
+    color: #cebb0d;
+    font-weight: bold;
+}
+
+#container2 tr:hover{
+    background-color:#B63014;
+    color:white;
+}
+
+
+#Points{
+    position: absolute;
+    width: 50%;
+    left:25%;
+    top:35%;
+    height: 244px;
+    background-color: #ffeb8a;
+    border: 2px solid #947b00 ;
+    border-radius: 8px;
+    display: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#tabelaPiket{
+    position: relative;
+    width: 350px;
+    margin:auto;
+    height: 180px;
+}
+
+#shfaqTab{
+    position: relative;
+    left: 42%;
+    top: 110px;
+    outline: none;
+    text-decoration: none;
+    font-size: 20px;
+    color:white;
+    padding:10px 35px;
+    background-color: rgb(161, 23, 23);
+    border: 2px solid rgb(161, 23, 23);
+    border-radius: 4px;
+}
+
+#shfaqTab:hover{
+    background-color: #c9a804;
+    border: 2px solid #c9a804 ;
+}
+
+#zhduk{
+    position: relative;
+    left: 38.6%;
+    top: 30px;
+    outline: none;
+    text-decoration: none;
+    font-size: 15px;
+    color:white;
+    padding:7px 20px;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#zhduk:hover{
+    background-color: rgb(161, 23, 23);
+    border: 2px solid rgb(161, 23, 23);
+}
+
+

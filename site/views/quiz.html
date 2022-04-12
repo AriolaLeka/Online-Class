@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Quiz</title>
+        <link rel="stylesheet" href="../..//assets/css/quiz.css">
+    </head>
+<body>
+    <div id="ccontainer">
+        <div id="navi">
+            <nav>
+                <a href="../index.html">
+                    <img src="../../assets/images/logoja.png" id="logo">
+                </a>
+                <ul>
+                    <li class="active"><a href="../index.html">Home</a></li>
+                    <li id="users"><a href="users.html">Users </a></li>
+                    <li id="login"><a href="#">Login</a>
+                        <div class="nav-area-1">
+                            <a href="login_teacher.html">Teacher</a><br>
+                            <a href="login_student.html">Student</a>
+                        </div>
+                    </li>
+                    <li id="signup"><a href="register.html">Sign up</a> </li>
+                    <li id="lectures"><a href="lectures.html">Lectures </a></li>
+                    <li id="addLecture"><a href="add_lecture.html">Add lecture </a></li>
+                    <li><a href="about_us.html">About us</a></li>
+                    <li id="logOUT"><a href="#">Log out</a></li>
+                </ul>
+            </nav>
+            </div>
+
+
+        <form name="quiz" id="quizz">
+            <img id="foto" src="https://www.thequizopedia.com/blog/wp-content/uploads/2020/08/Free-online-quiz.png">
+            <div>
+                <p id="pyetja"></p>
+                <input id="altr1" type="radio" name="question1">
+                <label id="alt1"></label><br>
+                <input id="altr2" type="radio" name="question1">
+                <label id="alt2"></label><br>
+                <input id="altr3" type="radio" name="question1">
+                <label id="alt3"></label><br>
+                <input id="altr4" type="radio" name="question1"> 
+                <label id="alt4"></label><br>
+            </div>
+
+        <button id="quizi" type="button">I'm Done</button>
+        </form>
+
+ </div>
+ 
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        var dB=openDatabase("databaz","1.0","databaz",65535); 
+        dB.transaction(function(transaction){
+            var sql="CREATE TABLE piket "+
+            "(Id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,"+
+            "Name VARCHAR(100) NOT NULL,"+
+            "Surname VARCHAR(100) NOT NULL,"+
+            "Scores INTEGER NOT NULL)";
+            transaction.executeSql(sql,undefined,function(){
+                console.log("The table was created successfully");
+            });
+        });
+    });
+</script>
+<script src="../../scripts/quiz.js"></script>
+
+
+
+</html>
+
+
+
+
+
+
+
